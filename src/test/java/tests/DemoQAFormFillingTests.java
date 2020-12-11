@@ -59,9 +59,8 @@ public class DemoQAFormFillingTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Fill The Form Selenide Test")
-    @Description("Verification that user can submit the form successfully")
-    @Tag("Form Test")
+    @DisplayName("Fill The Form Selenide Negative Test")
+    @Description("Negative test for for the form submission")
     @Owner("Sergei P")
     @Severity(SeverityLevel.TRIVIAL)
     public void userCanFillTheFormNegativeTest() {
