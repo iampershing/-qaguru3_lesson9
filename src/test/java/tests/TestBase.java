@@ -25,8 +25,8 @@ public class TestBase {
     capabilities.setCapability("enableVideo", true);
 
     Configuration.browserCapabilities = capabilities;
-//    Configuration.remote = "https://user1:1234@" + System.getProperty("remote.browser.url") + ":4444/wd/hub/";
-    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud:4444/wd/hub/";
+    Configuration.remote = "https://user1:1234@" + System.getProperty("remote.browser.url") + ":4444/wd/hub/";
+//    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud:4444/wd/hub/";
     Configuration.startMaximized = true;
 
     Selenide.clearBrowserCookies();
@@ -50,6 +50,7 @@ public class TestBase {
       email = randomAlphanumeric(13) + "@" + randomAlphabetic(15) + ".com",
       gender = "Male",
       number = randomNumeric(10),
+      badNumber = randomNumeric(10),
       month = "March",
       year = "1985",
       day = "01",
